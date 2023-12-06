@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Freelancer</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230704/pngtree-d-rendered-concept-illustrating-data-analysis-in-digital-marketing-and-seo-image_3757731.jpg");
+            background-size: cover;
+            height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#services, #post-job {
+    background-color: rgb(158, 218, 215);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Marketing Freelancer</h1>
+    </header>
+
+    <main class="container">
+
+        <section id="services" class="container">
+            <h2>Services</h2>
+            <p>Offering a range of digital marketing services to help businesses grow online.</p>
+    
+            <div class="service">
+                <h3>Search Engine Optimization (SEO)</h3>
+                <p>Optimizing websites to rank higher in search engines and attract organic traffic.</p>
+            </div>
+    
+            <div class="service">
+                <h3>Social Media Marketing</h3>
+                <p>Creating and managing social media campaigns to enhance brand visibility and engagement.</p>
+            </div>
+    
+            <div class="service">
+                <h3>Content Marketing</h3>
+                <p>Developing and promoting valuable content to attract and retain a target audience.</p>
+            </div>
+        </section>
+
+        <section id="post-job">
+            <h2>Post a Job</h2>
+            <p>Looking for digital marketing expertise? Fill out the form below.</p>
+
+            <form action="submit_job.php" method="post">
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company" required>
+
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+
+                <label for="description">Job Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <button type="submit">Post Job</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Digital Marketing Freelancer</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - Freelancer Marketplace</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/premium-vector/office-background-working-space-with-laptop-lamp-freelance-work-from-home-concept_134830-277.jpg");
+            background-size: cover;
+            height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#job-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Post a Job</h1>
+    </header>
+
+    <main class="container">
+        <section id="job-form">
+            <h2>Job Details</h2>
+            <p>Fill out the form below to post your job on the freelancer marketplace.</p>
+
+            <form action="submit_job.php" method="post">
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+
+                <label for="description">Job Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="skills">Skills Required:</label>
+                <select id="skills" name="skills" required>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Content Writing">Content Writing</option>
+                    <option value="Data Entry">Data Entry</option>
+                    <option value="Virtual Assistance">Virtual Assistance</option>
+                    <option value="E-learning and Training">E-learning and Training</option>
+                </select>
+
+                <label for="budget">Budget:</label>
+                <input type="text" id="budget" name="budget" required>
+
+                <button type="submit">Post Job</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Freelancer Marketplace</p>
+    </footer>
+</body>
+</html>

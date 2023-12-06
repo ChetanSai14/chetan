@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Freelancer</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://media.istockphoto.com/id/1393947260/photo/fingerprint-scan-for-secure-access-to-protected-data-network-dashboard.jpg?s=612x612&w=0&k=20&c=BYOrs_URJyw4IR9td1gmK_q5rOQpp17a4HBR71B1ww0=");
+            background-size: cover;
+            height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#services, #projects, #contact {
+    background-color: rgb(204, 195, 195);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: rgb(173, 147, 115);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(173, 147, 115);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Developer Freelancer</h1>
+    </header>
+
+    <main class="container">
+        <section id="services">
+            <h2>Services</h2>
+            <p>Providing front-end web development and other related services to bring your ideas to life.</p>
+
+            <ul>
+                <li>Responsive Website Design</li>
+                <li>HTML, CSS, JavaScript Development</li>
+                <li>UI/UX Design</li>
+                <li>Website Maintenance</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <a href="#">potfolio</a>
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio showcasing skills and projects.</p>
+            </div>
+
+            <div class="project">
+                <a href="#">2nd project</a>
+                <h3>name of project</h3>
+                <p>paste ur free code camp projects</p>
+            </div>
+
+            <div class="project">
+                <a href="#">3rd project</a>
+                <h3>3rd project</h3>
+                <p>paste ur free code camp project</p>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact" class="container">
+        <h2>Ready to post a job</h2>
+        <p>Ready to start your project? Let's discuss your requirements.</p>
+
+        <form action="submit_job.php" method="post">
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+
+            <label for="description">Job Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Post Job</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Web Developer Freelancer</p>
+    </footer>
+</body>
+</html>

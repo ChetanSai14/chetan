@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Writer Freelancer</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding: 0;
+            background-image: url("https://blog.featured.com/wp-content/uploads/2023/01/2935_Generated_Image.webp");
+            background-size: cover;
+            height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#services, #samples, #contact {
+    background-color: rgb(222, 168, 168);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.sample {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height:25px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Content Writer Freelancer</h1>
+    </header>
+
+    <main class="container">
+        <section id="services">
+            <h2>Services</h2>
+            <p>Providing content writing services to engage and inform your audience.</p>
+
+            <ul>
+                <li>Blog Writing</li>
+                <li>SEO Content Creation</li>
+                <li>Copywriting</li>
+                <li>Editing and Proofreading</li>
+                <li>Social Media Content</li>
+            </ul>
+        </section>
+
+        <section id="samples">
+            <h2>Writing Samples</h2>
+
+            <div class="sample">
+                <h3>Blog Post: "The Art of Storytelling"</h3>
+                <p>An exploration of the power of storytelling in content creation.</p>
+            </div>
+
+            <div class="sample">
+                <h3>SEO Article: "Effective Keyword Strategies"</h3>
+                <p>Guidance on implementing effective keyword strategies for better search rankings.</p>
+            </div>
+
+            <div class="sample">
+                <h3>Product Copy: "Introducing XYZ Product"</h3>
+                <p>Compelling product copy highlighting the features and benefits of XYZ Product.</p>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact" class="container">
+        <h2>Let's make a deal</h2>
+        <p>Ready to enhance your content? Reach out to discuss your writing needs.</p>
+
+        <form action="submit_job.php" method="post">
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+
+            <label for="description">Job Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Post Job</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Content Writer Freelancer</p>
+    </footer>
+</body>
+</html>

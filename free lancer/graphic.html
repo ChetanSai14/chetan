@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Designer Freelancer</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://media.istockphoto.com/id/1004202128/photo/social-web-concept.jpg?b=1&s=612x612&w=0&k=20&c=LhZlVl7vSDI2PYmZwgZXI5FhB97SA88MnCjuYK4iVts=");
+            background-size: cover;
+            height: 100vh;
+    background-color: aqua;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#services, #projects, #contact {
+    background-color: silver;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Graphic Designer Freelancer</h1>
+    </header>
+
+    <main class="container">
+        <section id="services">
+            <h2>Services</h2>
+            <p>Offering a variety of graphic design services to visually elevate your brand.</p>
+
+            <ul>
+                <li>Logo Design</li>
+                <li>Brand Identity</li>
+                <li>Print Design (Brochures, Flyers)</li>
+                <li>Web and App Design</li>
+                <li>Social Media Graphics</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Logo Redesign</h3>
+                <p>Transformed an outdated logo into a modern and memorable design.</p>
+            </div>
+
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Print Campaign</h3>
+                <p>Designed a series of print materials for a successful marketing campaign.</p>
+            </div>
+
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Website Redesign</h3>
+                <p>Revamped a website's visual elements for a more engaging user experience.</p>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact" class="container">
+        <h2>Ready to post a job</h2>
+        <p>Ready to start your project? Let's discuss your requirements.</p>
+
+        <form action="submit_job.php" method="post">
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+
+            <label for="description">Job Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Post Job</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Graphic Designer Freelancer</p>
+    </footer>
+</body>
+</html>
